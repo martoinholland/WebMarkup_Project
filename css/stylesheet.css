@@ -1,26 +1,42 @@
 body
 {
-    background: url("../img/background.jpeg")no-repeat;
-    
+    background: url("../img/background.jpeg")no-repeat;  
 }
 
 body
 {
  margin: auto;
  max-width: 50%;
+} 
+
+h1
+{
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/companylogoBG.jpg");
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    color: #ffffff;
 }
 
-h1{
-    margin: 0%;
-    display: flex;
-    background: url("../img/companylogoBG.jpg")
+h1 img{
+    width: 100%;
+    height: auto;
+}
+
+video{
+    display: none;
 }
 
 .images
 {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 100%;
+    max-height: 100%;
 }
+
 
 .imageHeaders
 {
@@ -31,13 +47,15 @@ h1{
     padding: 0%;
     margin: 0%;
     text-transform: uppercase;
+    color: #ffffff;
 }
 
 .nav{
-    border:1px solid rgb(255, 255, 255);
+    border: 0.05em solid #ffffff;
     background-color: #707070;
-    text-align:center;
-    font-size: 1.5em;
+    text-align: center;
+    font-size: 1em;
+    padding: 1%;
 }
 
 /* display menu items in a line*/
@@ -46,7 +64,14 @@ h1{
 }
 .nav a{
     display:inline-block;
-    padding:5px;
+    padding:1px;
+    margin: 0%;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav ul{
+    margin: 0%;
+    padding: 0%;
 }
 
 footer
@@ -55,6 +80,7 @@ text-align: center;
 background-color: rgb(0, 0, 0);
 color: rgb(255, 255, 255);
 border:1px solid rgb(255, 255, 255);
+padding: 0.3em;
 }
 
 @media screen and (max-with: 359px){
@@ -69,5 +95,10 @@ border:1px solid rgb(255, 255, 255);
 
 @media screen and (min-with: 961px){
 
-    
+    video {
+        display: initial;
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+    }
 }

@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 #backgroundVideo {
     display: block;
     min-width: 100%;
@@ -18,17 +20,15 @@
 
 body
 {
-    background: url("../img/background.jpeg")no-repeat;  
-}
-
-body
-{
+    background: url("../img/background.jpeg")no-repeat;
     margin: auto;
     max-width: 50%;
 } 
 
 h1
 {
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
     justify-content: center;
     align-items: center;
@@ -38,16 +38,13 @@ h1
     background-size: cover;
     display: flex;
     color: #ffffff;
-    font-size: 2em;
+    font-size: 4em;
+    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
 
 h1 img{
     width: 100%;
     height: auto;
-}
-
-video{
-    display: none;
 }
 
 .images
@@ -58,6 +55,8 @@ video{
 }
 
 #productThing{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #2699FB;
     text-align: center;
     font-size: 2em;
@@ -68,19 +67,23 @@ video{
     color: #ffffff;
     letter-spacing: 10px;   
 }
-.imageHeaders
-{
+.imageHeaders{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #2699FB;
     text-align: center;
     font-size: 2em;
     text-align: center;
-    padding: 0%;
+    padding: 0.5%;
     margin: 0%;
     text-transform: uppercase;
     color: #ffffff;
+    font-weight: 7;
 }
 
 .nav{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     border: 0.05em solid #ffffff;
     background-color: #707070;
     font-size: 1em;
@@ -92,6 +95,8 @@ video{
     display:inline;
 }
 .nav a{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     display:inline-block;
     padding:1px;
     margin: 0%;
@@ -106,8 +111,9 @@ video{
     text-transform: uppercase;
 }
 
-footer
-{
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: #000000;
     color: #ffffff;
@@ -116,12 +122,15 @@ footer
 }
 
 #products{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: grid;
     background-color: #ffffff;
 }
 
 #photos{
-    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #photos img{
@@ -131,16 +140,20 @@ footer
 }
 
 h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #707070;
     background-color: #f5f5f5;
     padding: 1.5%;
 }
 
-form
-{
+form{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f5;
     align-content: center;
 }
+
 form fieldset{
     max-width: 87%;
     padding: 3%;
@@ -151,29 +164,34 @@ form fieldset{
 }
 
 input{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     font-size: 1em;
 }
 
 fieldset{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #ffffff;
     font-size: 1em;
     color: #AAAAAA; 
 }
 
 textarea{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
 
 
 select{
-    position: relative;
-    right: -100px;
-    width: 400px;
-    height: 25px;
+    float: right;
 }
 
 #button{
+    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 2%;
     max-width: 87%;
     position: relative;
@@ -184,21 +202,21 @@ select{
     font-size: 1.5em;
 }
 
-@media screen and (max-with: 359px){
+@media screen and (max-width: 359px){
     #backgroundvideo{
         display: none;
     }
 
 }
 
-@media screen and (min-with: 360px) and (max-width:960px){
+@media screen and (min-width: 360px) and (max-width:960px){
     #backgroundvideo{
         display: none;
     }
     
 }
 
-@media screen and (min-with: 961px){
+@media screen and (min-width: 961px){
 
    
 }

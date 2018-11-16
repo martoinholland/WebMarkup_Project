@@ -1,82 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Contact</title>
-        <meta charset="utf-8" />
-        <meta name = "keywords" content="form, contact, information, company, cool, games, buttons, entertainment, fun" />
-        <meta name = "description" content="Contact page for even more fun and entertainment." />
-        <meta name = "author" content="Martin Aranguelov" />
-        <link rel = "stylesheet" type="text/css" href="css/stylesheet.css" />
-    </head>
-    <body>
+	<html lang="en">
+		<head>
+			<title>Contact</title>
+			<meta charset="utf-8" />
+			<meta name = "keywords" content="form, contact, information, company, cool, games, buttons, entertainment, fun" />
+			<meta name = "description" content="Contact page for even more fun and entertainment." />
+			<meta name = "author" content="Martin Aranguelov" />
+			<link rel = "stylesheet" type="text/css" href="css/stylesheet.css" />
+		</head>
+		<body>
+			
+			<section>
+				<video id="backgroundVideo" autoplay muted loop src="movie/background.mp4"></video>
+
+				<header>
 		
-		<section>
-			<video id="backgroundVideo" autoplay muted loop src="movie/background.mp4"></video>
+					<h1>
+							COMPANY NAME
+					</h1>
+					<nav class="nav">
+						<ul>
+							<li><a href="index.html"><strong>Home</strong></a></li>
+							<li><a href="product.html"><strong>Product</strong></a></li>
+							<li><a href="http://www.blogger.com"><strong>Blog</strong></a></li>
+						</ul>
+					</nav>
+		
+				</header>
 
-			<header>
-	
-				<h1>
-						COMPANY NAME
-				</h1>
-				<nav class="nav">
-					<ul>
-						<li><a href="index.html"><strong>Home</strong></a></li>
-						<li><a href="product.html"><strong>Product</strong></a></li>
-						<li><a href="http://www.blogger.com"><strong>Blog</strong></a></li>
-					</ul>
-				</nav>
-	
-			</header>
+				<h2 id="productThing">
+					Contact 
+				</h2>
 
-			<h2 id="productThing">
-				Contact 
-			</h2>
+				<h3>
+					More information
+				</h3>
 
-			<h3>
-				More information
-			</h3>
-
-			<form action="nowhere.php" method="post">
-				<fieldset>
-					<label >Select topic</label>
-					<select>
-						<option value="general">General inquiries</option>
-						<option value="press">Press relations</option>
-						<option value="recruitement">Recruitement</option>
-					</select>
-				</fieldset>
-				<fieldset class="contactFormFieldset">
-					<input
-							type="text"
-							name="contactFormName"
-							placeholder="Your name.."
+				<form action="nowhere.php" method="post">
+					<fieldset>
+						<label >Select topic</label>
+						<select>
+							<option value="general">General inquiries</option>
+							<option value="press">Press relations</option>
+							<option value="recruitement">Recruitement</option>
+						</select>
+					</fieldset>
+					<fieldset class="contactFormFieldset">
+						<input
+								type="text"
+								name="contactFormName"
+								placeholder="Your name.."
+						/>
+					</fieldset>
+					<fieldset class="contactFormFieldset">
+						<input
+								type="email"
+								name="email"
+								placeholder="Your email.."
+						/>
+					</fieldset>
+					<fieldset>
+						<textarea
+								rows="7"
+								cols="40"
+								name="message"
+								placeholder="Write something.."
+						></textarea>
+					</fieldset>
+					<input id="button"
+							type="submit"
+							value="Submit"
 					/>
-				</fieldset>
-				<fieldset class="contactFormFieldset">
-					<input
-							type="email"
-							name="email"
-							placeholder="Your email.."
-					/>
-				</fieldset>
-				<fieldset>
-					<textarea
-							rows="7"
-							cols="40"
-							name="message"
-							placeholder="Write something.."
-					></textarea>
-				</fieldset>
-				<input id="button"
-						type="submit"
-						value="Submit"
-				/>
-			</form>
+				</form>
 
-			<footer>    
-			&copy; 2018 - Martin - Inholland 
-			</footer>
+				<footer>    
+				&copy; 2018 - Martin - Inholland 
+				</footer>
 
-		</section>
-	</body>
-</html>
+			</section>
+		</body>
+	</html>

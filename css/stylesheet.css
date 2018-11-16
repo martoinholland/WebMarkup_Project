@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+#backgroundVideo {
+display: block;
+min-width: 100%;
+min-height: 100%;
+position: fixed;
+right: 0%;
+bottom: 0%;
+z-index: -1;
+background-size: cover;
+}
+
 body
 {
     background: url("../img/background.jpeg")no-repeat;  
@@ -157,7 +168,9 @@ textarea{
 
 select{
  position: relative;
- right: -370px;
+ right: -100px;
+ width: 400px;
+ height: 25px;
 }
 
 #button{
@@ -183,10 +196,5 @@ select{
 
 @media screen and (min-with: 961px){
 
-    video {
-        display: initial;
-        position: absolute;
-        z-index: -1;
-        max-width: 100%;
-    }
+   
 }

@@ -1,14 +1,18 @@
+<!--HTML code for the contact page-->
+
 <!DOCTYPE html>
+	<!-- make language for screen readers english-->
 	<html lang="en">
 		<head>
 			<title>Contact</title>
 			<meta charset="utf-8" />
+			<!--SEO-->
 			<meta name = "keywords" content="form, contact, information, company, cool, games, buttons, entertainment, fun" />
 			<meta name = "description" content="Contact page for even more fun and entertainment." />
 			<meta name = "author" content="Martin Aranguelov" />
-
+			<!--Link css stylesheet-->
 			<link rel = "stylesheet" type="text/css" href="css/stylesheet.css" />
-
+			<!--Add the favicons for different devices-->
 			<link rel="apple-touch-icon" type="image/png" href="img/inholland180.png"/>
 			<link rel="shortcut icon" type="image/png" href="img/inholland32.png"/>
 			<link rel="icon" type="image/png" href="img/inholland16.png"/>
@@ -16,14 +20,16 @@
 		<body>
 			
 			<section>
+				<!--include background video-->
 				<video id="backgroundVideo" autoplay muted loop src="movie/background.mp4"></video>
 
 				<header>
-		
+					<!--add text to header-->
 					<h1>
 							COMPANY NAME
 					</h1>
-					<nav class="nav">
+					<!--add navigation bar text and links through a list-->
+					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
 							<li><a href="product.html">Product</a></li>
@@ -32,24 +38,26 @@
 					</nav>
 		
 				</header>
-
-				<h2 id="productThing">
+				<!--add contact page header-->
+				<h2 id="headers2">
 					Contact 
 				</h2>
-
+				<!--add contact form text-->
 				<h3>
 					More information
 				</h3>
-
+				<!--Contact form code-->
 				<form action="nowhere.php" method="post">
 					<fieldset>
 						<label >Select topic</label>
+						<!--drop-down menu-->
 						<select>
 							<option value="general">General inquiries</option>
 							<option value="press">Press relations</option>
 							<option value="recruitement">Recruitement</option>
 						</select>
 					</fieldset>
+					<!--name field-->
 					<fieldset class="contactFormFieldset">
 						<input
 								type="text"
@@ -57,6 +65,7 @@
 								placeholder="Your name.."
 						/>
 					</fieldset>
+					<!--email field-->
 					<fieldset class="contactFormFieldset">
 						<input
 								type="email"
@@ -64,6 +73,7 @@
 								placeholder="Your email.."
 						/>
 					</fieldset>
+					<!--message field-->
 					<fieldset>
 						<textarea
 								rows="7"
@@ -71,13 +81,14 @@
 								name="message"
 								placeholder="Write something.."
 						></textarea>
+					<!--submit button-->	
 					</fieldset>
 					<input id="button"
 							type="submit"
 							value="Submit"
 					/>
 				</form>
-
+				<!--add footer text-->
 				<footer>    
 				&copy; 2018 - Martin - Inholland 
 				</footer>

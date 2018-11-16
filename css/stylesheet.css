@@ -1,13 +1,15 @@
+/*CSS STYLESHEET*/
+/*--FOR INDEX, PRODUCT AND CONTACT PAGES--*/
+
+/*style tweaks for the whole website*/
 *{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
 }
-
-
-
-#backgroundVideo {
+/* setting the video as background*/
+#backgroundVideo{
     display: block;
     min-width: 100%;
     min-height: 100%;
@@ -17,100 +19,112 @@
     z-index: -1;
     background-size: cover;
 }
-
-body
-{
+/*setting image background in case video is unsupported or doesn't work*/
+body{
     background: url("../img/background.jpeg")no-repeat;
     margin: auto;
+    /*centering contents*/
     max-width: 50%;
 } 
 
-h1
-{
+/*company name header*/
+h1{
+    /*setting font families and fallback font in case of incompatibility*/
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0%;
+    /*allign text in the center and add image background*/
     justify-content: center;
     align-items: center;
     background: url("../img/companylogoBG.jpg");
     height: 150px;
+    /*making sure whole background picture is visible*/
     background-position: center;
     background-size: cover;
     display: flex;
     color: #ffffff;
     font-size: 4em;
+    /*adding outline to the text*/
     text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000;
 }
-
+/*tweaking background image so that all of it is visible*/
 h1 img{
     width: 100%;
     height: auto;
 }
-
-.images
-{
+/*displaying the whole images below the headersw/o empty spaces*/
+.images{
     max-width: 100%;
     max-height: 100%;
     display: block;
 }
-
-#productThing{
+/*blue headers on each page*/
+#headers2{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #2699FB;
     text-align: center;
     font-size: 2em;
-    text-align: center;
+    /*add space between lines*/
     padding: 2%;
     margin: 0%;
+    /*make text all caps*/
     text-transform: uppercase;
     color: #ffffff;
-    letter-spacing: 10px;   
+    letter-spacing: 10px;
+    /*make font more light*/
+    font-weight: 300
 }
+/*blue headers on top of each image on the index page*/
 .imageHeaders{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #2699FB;
     text-align: center;
     font-size: 2em;
-    text-align: center;
+    /*add space between lines*/
     padding: 0.5%;
     margin: 0%;
+    /*make text all caps*/
     text-transform: uppercase;
     color: #ffffff;
-    font-weight: 7;
+    /*make letters lighter*/
+    font-weight: 300;
 }
-
-.nav{
+/*navigation bar*/
+#nav{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
+    /*adding microscopic border*/
     border: 0.05em solid #ffffff;
     background-color: #707070;
     font-size: 1em;
+    /*increase space between top and bottom*/
     padding: 1%;
 }
 
 /* display menu items in a line*/
-.nav li{
+#nav li{
     display:inline;
 }
-.nav a{
+/*customiing each button*/
+#nav a{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
-    display:inline-block;
-    padding:1px;
+    padding: 1px;
     margin: 0%;
+    /*remove underlines from hyperlinks*/
     text-decoration: none;
     color: #ffffff;
 }
-.nav ul{
-    margin: 0%;
-    padding: 0%;
+/*customize list of buttons*/
+#nav ul{
+    /*alling buttons in center*/
     text-align: center;
-    word-spacing: 200%;
+    /*make text all caps*/
     text-transform: uppercase;
 }
-
+/*customize footer*/
 footer{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
@@ -118,58 +132,61 @@ footer{
     background-color: #000000;
     color: #ffffff;
     border:1px solid #ffffff;
+    /*making footer spacier*/
     padding: 0.3em;
 }
-
+/*customize grid from products page*/
 #products{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
+    /*using grid for ordering photos*/
     display: grid;
     background-color: #ffffff;
 }
-
-#photos{
-    font-family: 'Times New Roman', Times, serif;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
+/*setting photos' sizes*/
 #photos img{
+    /*set margin between photos*/
     margin: 10px;
 	width: 200px;
 	height: 150px;
 }
-
+/*customizing thext from contact form*/
 h3{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
     color: #707070;
+    /*using same color as form to trick robots into thinking the text is in the form window ;)*/
     background-color: #f5f5f5;
+    /*making text spacier*/
     padding: 1.5%;
+    /*lightening the font*/
+    font-weight: 300;
 }
-
+/*customizing the contact for window*/
 form{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f5f5f5;
     align-content: center;
 }
-
+/*tweaking position so that form fields are in the center*/
 form fieldset{
     max-width: 87%;
     padding: 3%;
     margin: 3%;
     margin-left: 6%;
     margin-top: 0%;
+    /*+adding a border ofc*/
     border: 2px solid #707070;
 }
-
+/*changing the placeholder text*/
 input{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     font-size: 1em;
 }
-
+/*changing the placeholder text*/
 fieldset{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
@@ -177,45 +194,48 @@ fieldset{
     font-size: 1em;
     color: #AAAAAA; 
 }
-
+/*changing the placeholder text*/
 textarea{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
 }
-
-
+/*make the drop-down menu stick to the right (and use float cause it's mandatory)*/
 select{
     float: right;
 }
-
+/*tweak submit button*/
 #button{
     font-family: 'Times New Roman', Times, serif;
     font-family: Arial, Helvetica, sans-serif;
+    /*make it larger*/
     padding: 2%;
+    /*allign button with form fields*/
     max-width: 87%;
     position: relative;
     left: 43px;
     top: -10px;
     background-color: #2699FB;
-    color: #ffffff;
+    color: #FFFFFF;
+    /*make button text larger*/
     font-size: 1.5em;
 }
 
+/*media query*/
 @media screen and (max-width: 359px){
+    /*hide video when display is too small*/
     #backgroundvideo{
         display: none;
     }
-
 }
-
+/*media query*/
 @media screen and (min-width: 360px) and (max-width:960px){
+    /*hide video when display is too small*/
     #backgroundvideo{
         display: none;
     }
-    
 }
-
+/*media query*/
 @media screen and (min-width: 961px){
 
    
